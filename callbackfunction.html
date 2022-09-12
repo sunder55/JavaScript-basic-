@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let news=[
+            {newsTitle:'first title',newsContent:'hello world'},
+            { 
+                newsTitle:'second Title',newsContent:'callback function'}
+        ]
+
+    function showNews(){
+        setTimeout(()=>{
+        let result="";
+        news.forEach(showNews);
+        function showNews(post){
+            result+=`<li>${post.newsTitle} </li>`;
+        }
+        document.querySelector('div').innerHTML=result;
+    },2000)
+    }
+       // showNews();
+
+        //call the function addnews()
+        // function addNews(newsdata){
+        //     setTimeout(()=>{
+        //     news.push(newsdata);
+        // },1000)
+        // }
+        // addNews({
+        //     newsTitle:'third title', newsContent:'added form another'
+        // })
+
+// call the addnews function with showNews()as callback
+function addNews(newsdata,callback_func){
+setTimeout(()=>{
+    news.push(newsdata);
+    //call the function after adding the news
+    callback_func();
+},3000)
+}
+
+// call the addnews function with show News() as call back;
+ addNews({
+            newsTitle:'third title', newsContent:'added form another'
+        },showNews);
+
+
+
+    //    function showNews(){
+    //         // setTimeout(()=>{
+    //             let result=""
+    //             news.forEach((post)=>{
+    //                 result +=`<li> ${post.newsTitle} </li>`
+    //             })
+    //             document.querySelector('div').innerHTML=result;
+    //         // },2000)
+    //     }
+    //     showNews();
+
+
+    
+    let str="hello it me";
+    console.log(str.replace("e","a"));
+    console.log(str.replace(/e/g,"s"))
+    console.log(str.indexOf("l"));
+    console.log(str.lastIndexOf("e"));
+    console.log(str.charAt("6"));
+    // console.log(str.lastIndexOf("s"));
+
+    // const num=12.53424;
+    // const one=Math.round(num);
+    // console.log(one);
+    // const cel=Math.sqrt(25);
+    // console.log(cel);
+    // const po=Math.pow(2,3);
+    // console.log(po);
+
+
+   
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nabbar{
+    display: flex;
+    align-items: center;
+    background-color: darkslategray;
+    color:#fff;
+    justify-content: space-between;
+}
+
+.nabbar_item ul{
+    display:flex;
+}
+div ul li a{
+    padding:2rem;
+    text-decoration: none;
+}
+div ul li{
+    list-style: none;
+}
+@media screen and (max-width:500px) {
+    div ul{
+       display: flex;
+       flex-direction: column;
+    }
+
+  
+    div ul li a{
+       
+        color:red;
+    }
+}
+.section_two{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top:2rem;
+}
+.section_two div{
+    width:15rem;
+    height:15rem;
+  background-color: darksalmon;
+  margin-top:2rem;
+}

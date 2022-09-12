@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('javascript','we are storing in the browser application');
+        const show=localStorage.getItem('javascript');
+        
+        // localStorage.removeItem('javascript');
+        // document.write(show);
+
+
+        ///jason
+        let student_details={
+            'first_name':'Ram',
+            'last_name':'kc',
+            'subjects':['html','css','javascript','git','react']
+        }
+        // localStorage.setItem('students',student_details);
+        const obj_to_str=JSON.stringify(student_details);
+        localStorage.setItem('students',obj_to_str);
+
+        const data=localStorage.getItem('students');
+        document.write(data);
+        // document.write(data.first_name);
+        
+        // to convert stirng to json
+        const str_to_obj=JSON.parse(data);
+        console.log(str_to_obj);
+        console.log(str_to_obj.first_name);
+        console.log(str_to_obj.subjects[0]);
+    </script>
+</body>
+</html>

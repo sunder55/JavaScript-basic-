@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const my_text="welcome to is web programming language class to read javascript  is concept";
+        document.write(my_text.length+"<br>");
+        document.write(`${my_text.indexOf('web')}<br>`);
+        // lastIndexOf();
+        document.write(my_text.lastIndexOf("to")+'<br>');
+        //replace
+        document.write(my_text.replace("to","on")+'<br>');
+        // we can user regular expression with g to replace all the repeated string
+        document.write(my_text.replace(/is/g,'too')+'<br>');
+        // with regular expression i can make case insensitive
+        document.write(`${my_text.replace(/READ/i,'learn')}<br>`);
+        //slice
+        document.write(my_text.slice(0,20)+'<br>');
+        const one="sunder";
+        const two="kandel";
+        // concat() 
+        const total=one.concat(two);
+        document.write(total+"<br>");
+        
+        // charCodeAt();
+        document.write(my_text.charAt(15));
+    </script>
+</body>
+</html>

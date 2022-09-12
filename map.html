@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //   const demo_func=(num)=>{
+        //     document.write(`<li>${num} </li>`)
+        // }
+        // const numbers=[20,30,20,40,100,200];
+        // numbers.map(demo_func);
+
+        // or
+        // const number=[20,30,20,40,100,200];
+        // number.map(function(num){
+        //     document.write(`<li>${num}</li>`)
+        // })
+        let sum=0;
+        const num=[20,30,40,50];
+        num.forEach(check_func);
+     
+            function check_func(n){
+                sum=sum+n
+                return sum;
+            }
+            document.write(sum);
+        
+      
+    </script>
+</body>
+</html>

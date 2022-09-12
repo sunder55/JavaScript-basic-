@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const x=25.45789;
+
+        //toFixed() is used to print how many numbers after decimal points.
+        document.write(x.toFixed(2)+"<br>");
+
+        // toPrecision() is used to show how many numbers to be printed as a whole
+        document.write(x.toPrecision(3)+"<br>");
+
+        //to convert string to number
+        let a="23.3";
+        document.write(Number(a));
+        let b=Number(a);
+        document.write(typeof(b)+"<br>");
+
+        let c="4";
+        let d="5.34324";
+       document.write(Number(c)+Number(d)+"<br>");
+
+       const name='hello';
+       const check=Number(name);
+       document.write(typeof(check));
+       // output: number
+
+        // parseInt
+        // ParseFloat
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    function factorial(n){
+    //base case
+    if(n == 0 || n == 1){
+        return 1;
+    //recursive case
+    }else{
+        return n * factorial(n-1);
+    }
+}
+let n = 5;
+answer = factorial(n)
+console.log("The factorial of " + n + " is " + answer);
+
+
+function retirementAge(birth){
+    const age=2079-birth;
+    return age;
+}
+const curAge=function(birth){
+    const retireAge=65-retirementAge(birth);
+    
+
+if(retireAge>0){
+    console.log(`the retirementAge is ${retireAge}`);
+    return retireAge;
+}else{
+    "The age is -1";
+}
+}
+    curAge(2056);
+        </script>
+</body>
+</html>

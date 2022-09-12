@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits=['apple','graphes','banana','jackfruit'];
+
+        document.write(fruits.length);
+        //pop() method to remove last element of array;
+        document.write(`${fruits.pop()}<br>`);
+        document.write(fruits)+'<br>';
+
+        document.write(`${fruits.push('lastfurits')}<br>`);
+        document.write(fruits)+'<br>';
+
+      fruits.shift();
+      document.write(`<br>${fruits}`);
+
+      fruits.unshift('orange');
+      document.write(`<br>${fruits}`);
+     
+      fruits.sort();
+      document.write(`<br>${fruits}`);
+
+      fruits.reverse();
+      document.write(`<br>${fruits}`);
+        
+    </script>
+</body>
+</html>
